@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .inbox {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .inbox__people {
+    margin-bottom: 10px;
+  }
+  
+  .inbox__people h4 {
+    margin: 0;
+  }
+  
+  .messages__history {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .fallback {
+    color: #999;
+  }
+  
+  .message_form {
+    display: flex;
+  }
+  
+  .message_form__input {
+    flex-grow: 1;
+    padding: 5px;
+  }
+  
+  .message_form__button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
