@@ -7,24 +7,51 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="inbox">
-        <div class="inbox__people">
-          <h4>Active users</h4>
-        </div>
-        <div class="inbox__messages">
-          <div class="messages__history"></div>
-          <div class="fallback"></div>
-        </div>
-      </div>
+<div >
+  <img class="img" src="./logo.png" alt="">
+</div>  
+<div style="display: flex;
+justify-content: center;color: #215d93;">
+  <h1>
+    A REAL TIME CHAT APPLICATION
+  </h1>
 
-      <form class="message_form">
-        <input type="text" class="message_form__input" placeholder="Type a message" />
-        <button class="message_form__button" type="submit">
-          Enter
-        </button>
-      </form>
+
+</div>    
+    <div class="innerBody">
+      <div class="container">
+        <div class="inbox">
+          <div class="inbox__people">
+            <h4>Active users</h4>
+          </div>
+          <div class="inbox__messages">
+            <div class="messages__history"></div>
+            <div class="fallback"></div>
+          </div>
+        </div>
+  
+        <form class="message_form">
+          <input
+            type="text"
+            class="message_form__input"
+            placeholder="Type a message"
+          />
+          <button class="message_form__button" type="submit">Enter</button>
+        </form>
+      </div>
+      
     </div>
+    <div style="display: flex;
+justify-content: center;">
+  
+<div style="display: flex;
+align-items: center; color: #215d93;">
+
+  <h3>
+    Made By:
+  </h3>
+  <h1 style="margin-left: 5px;">AHTSHAM ULHAQ</h1>
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
     <script src="main.js"></script>

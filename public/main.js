@@ -9,7 +9,7 @@ const fallback = document.querySelector(".fallback");
 let userName = "";
 
 const newUserConnected = (user) => {
-  userName = user || `User${Math.floor(Math.random() * 1000000)}`;
+  userName = user || prompt("ENTER YOUR NAME");
   socket.emit("new user", userName);
   addToUsersBox(userName);
 };
@@ -21,7 +21,7 @@ const addToUsersBox = (userName) => {
 
   const userBox = `
     <div class="chat_ib ${userName}-userlist">
-      <h5>${userName}</h5>
+      <h5 class='uzer'>${userName}</h5>
     </div>
   `;
   inboxPeople.innerHTML += userBox;
@@ -29,15 +29,18 @@ const addToUsersBox = (userName) => {
 
 const addNewMessage = ({ user, message }) => {
   const time = new Date();
-  const formattedTime = time.toLocaleString("en-US", { hour: "numeric", minute: "numeric" });
+  const formattedTime = time.toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+  });
 
   const receivedMsg = `
   <div class="incoming__message">
     <div class="received__message">
-      <p>${message}</p>
+      <p class="msg">${message}</p>
       <div class="message__info">
         <span class="message__author">${user}</span>
-        <span class="time_date">${formattedTime}</span>
+        <span class="time_date">(${formattedTime})</span>
       </div>
     </div>
   </div>`;
@@ -45,9 +48,9 @@ const addNewMessage = ({ user, message }) => {
   const myMsg = `
   <div class="outgoing__message">
     <div class="sent__message">
-      <p>${message}</p>
+      <p class="msg">${message}</p>
       <div class="message__info">
-        <span class="time_date">${formattedTime}</span>
+        <span class="time_date">(${formattedTime})</span>
       </div>
     </div>
   </div>`;
