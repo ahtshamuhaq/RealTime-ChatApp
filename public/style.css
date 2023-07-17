@@ -64,6 +64,7 @@ font-weight: bold;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
+  word-wrap: break-word;
 }
 
 .fallback {
@@ -79,6 +80,7 @@ font-weight: bold;
   padding: 5px;
   outline: none;
   background-color: #f1f1f19d;
+  word-wrap: break-word;
 }
 
 .message_form__button {
